@@ -1,0 +1,8 @@
+double[] heart_rate = new double[5000];
+
+heart_rate[4999]; Last element in the array starting from indice 0.
+
+if (out of space) {
+
+	heart_rate = new double[10000];
+}

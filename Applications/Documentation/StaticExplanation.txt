@@ -1,0 +1,21 @@
+public class Pet {
+
+	public static String name; (Now the name variable will be shared to all instances of the Pet class).
+
+}
+
+public class Pet {
+
+	public static void main(...) {
+	
+		Pet myPet = new Pet(); (Doesn't take any arguments, thus, a default constructor).
+		myPet.name = "John"; (Belongs to myPet, belongs to the object myPet).
+		System.out.println(myPet.name); (John, gets printed here).
+
+		Pet yourPet = new Pet();
+		System.out.println(yourPet.name); (Nothing gets printed here if the keyword is not set to "static". Prints a blank and goes on to the next line).
+		yourPet.name = "George"; (Belongs to yourPet, belongs to the object yourPet).
+		System.out.println(myPet.name); (Prints "George". Static variables belong to all objects of the class Pet). 
+
+	}
+}

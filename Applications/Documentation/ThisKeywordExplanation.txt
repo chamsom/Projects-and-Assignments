@@ -1,0 +1,19 @@
+Java creates a default constructor for you. A constructor is another type of method.
+It has the same name as the class.
+
+public Pet2(String name) {
+
+	System.out.println(name);
+	...
+}
+
+public Pet2(String name) {
+
+	System.out.println(this.name); "this" refers to the class attribute "private String name;".
+	...
+}
+
+public Pet2(String name) {
+
+	this.name = name; Whatever parameters passed through "name" is now assigned to the class attribute by "this.name". 
+}

@@ -1,0 +1,21 @@
+These two arrays are not equal because they are stored in different places in memory.
+
+int[] a = {1, 2, 3};
+
+int[] b = {1, 2, 3};
+
+This does not print anything, since they are in two different places.
+
+if (a == b) {
+	System.out.println("they are equal!");
+}
+
+Whenever you need to iterate over an array and print what's inside. Use these two for loops.
+
+int[] a = {1, 2, 3, 4, 5};
+
+for (int i = 0; i < a.length; i++)
+	System.out.println(a[i]);
+
+foreach (int element : a)	
+	System.out.println(element);
